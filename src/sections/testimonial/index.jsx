@@ -28,7 +28,7 @@ const Testimonial = () => {
   useEffect(() => {
     timer.current = setInterval(() => {
       next();
-    }, 7000);
+    }, 5000);
 
     return () => {
       clearInterval(timer.current);
