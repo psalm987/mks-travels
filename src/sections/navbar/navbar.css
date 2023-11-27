@@ -1,0 +1,64 @@
+.navbar-holder {
+  background-color: var(--hero-bg);
+  padding: 8px 0px;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-menu {
+  display: none;
+  gap: 60px;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-menu > li > a,
+.navbar-menu > li > a > button,
+.navbar-menu > li > button {
+  text-decoration: none;
+  color: #212832;
+  font-size: 17px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-menu.drawer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu > li > a > button {
+  border-radius: 5px;
+  border: 1px solid #212832;
+  padding: 8px 22px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu-hamburger,
+.navbar-menu-hamburger > svg {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.drawer-close,
+.drawer-close > svg {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-menu {
+    display: flex;
+  }
+  .navbar-menu-hamburger {
+    display: none;
+  }
+}

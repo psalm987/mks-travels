@@ -1,0 +1,90 @@
+.subscribe-card {
+  border-radius: 120px 20px 20px 20px;
+  background: rgb(248, 247, 253);
+  padding: 80px 20px;
+}
+
+.subscribe-card > .subscribe-card-corner-element {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+}
+
+.subscribe-card > .subscribe-card-circle-element-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 200px;
+  width: auto;
+}
+
+.subscribe-card > .subscribe-card-circle-element {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 200px;
+  width: auto;
+}
+.subscribe-card > h3 {
+  color: var(--secondary-text);
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px; /* 163.636% */
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 60px auto 0px auto;
+  max-width: 625px;
+  position: relative;
+  flex-direction: column;
+}
+
+.subscribe-form > button {
+  border-radius: 10px;
+  padding: 22px 50px;
+  color: var(--white);
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  width: 100%;
+}
+
+.subscribe-card-plus-element {
+  position: absolute;
+  z-index: -100;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-card > .subscribe-card-circle-element-2 {
+    height: unset;
+    width: unset;
+  }
+
+  .subscribe-card > .subscribe-card-circle-element {
+    height: unset;
+    width: unset;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .subscribe-form > button {
+    width: unset;
+  }
+  .subscribe-card {
+    padding: 80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .subscribe-card-plus-element {
+    bottom: -80px;
+    right: -80px;
+  }
+}

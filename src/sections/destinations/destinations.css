@@ -1,0 +1,83 @@
+.destination-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0),
+    0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.destination-card-content {
+  position: absolute;
+  bottom: 0%;
+  background-color: var(--white);
+  width: 100%;
+  padding: 28px;
+}
+
+.destination-card-content > div > h3 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+}
+
+.destination-card-content > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.destination-card-content > div:first-of-type {
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.destination-card > img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.destination-card:hover > img {
+  transform: scale(1.2);
+}
+
+.destinations-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.destination-spring-decore {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+  .destination-card {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .destination-card {
+    width: 30%;
+  }
+  .destination-spring-decore {
+    top: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .destination-spring-decore {
+    right: -50px;
+  }
+}

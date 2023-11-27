@@ -1,0 +1,88 @@
+:root {
+  --primary: #e79310;
+  --btn-green: #5dae1d;
+  --primary-text: #181e4b;
+  --secondary-text: #5e6282;
+  --secondary-text-2: #686d77;
+  --auxillary-text-1: #14183e;
+  --auxillary-text-2: #1e1d4c;
+  --disabled-indicator: #e5e5e5;
+  --white: #fff;
+  --gradient-3: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+
+  --hero-bg: #fff9ee;
+
+  --placeholder: #39425d;
+
+  --text-size-lead: 20px;
+  --text-size-largest: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  color: var(--primary-text);
+}
+
+.relative {
+  position: relative;
+}
+
+p {
+  color: var(--secondary-text);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.section-lead {
+  font-size: 18px;
+}
+
+h2 {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section {
+  padding: 80px 0px;
+}
+
+::placeholder {
+  color: var(--placeholder);
+  font-weight: 400;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 124.5%;
+}
+
+.large {
+  font-size: 20px;
+  line-height: 124.5%; /* 24.9px */
+  letter-spacing: 0.1px;
+}

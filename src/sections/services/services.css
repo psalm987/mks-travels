@@ -1,0 +1,64 @@
+.services > img {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: -100;
+}
+
+.services > .pin-decore {
+  border-radius: 30px 0px 10px 0px;
+  background: #5dae1d;
+  position: absolute;
+  bottom: 0%;
+  left: 22%;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  z-index: -100;
+}
+
+.service-card-holder {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.service-card > img {
+  width: auto;
+  height: 100px;
+}
+
+.service-card {
+  padding: 30px;
+  border-radius: 36px;
+  background: var(--white);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.5s ease-in-out;
+  width: 100%;
+}
+
+.service-card:hover {
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0),
+    0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.service-card > h3 {
+  margin: 24px 0px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .service-card {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .service-card {
+    width: 22%;
+  }
+}
